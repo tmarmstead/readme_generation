@@ -1,0 +1,26 @@
+{
+  "name": "readme_generation",
+  "version": "1.0.0",
+  "description": "Generates a quality README file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tmarmstead/readme_generation.git"
+  },
+  "keywords": [
+    "README",
+    "generator"
+  ],
+  "author": "Tina Armstead",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tmarmstead/readme_generation/issues"
+  },
+  "homepage": "https://github.com/tmarmstead/readme_generation#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
+}
