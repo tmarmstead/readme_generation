@@ -2,67 +2,52 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-inquirer
-  .prompt([
-    {
-      type: 'input',
-      message: 'What is your user name?',
-      name: 'username',
-    },
-    {
-        type: 'input',
-        message: 'What is your user name?',
-        name: 'username',
-      },
-    {
-      type: 'input',
-      message: 'What is your user name?',
-      name: 'username',
-    },
-    {
-        type: 'input',
-        message: 'What is your user name?',
-        name: 'username',
-      },
-    {
-      type: 'input',
-      message: 'What is your user name?',
-      name: 'username',
-    },
-    {
-        type: 'input',
-        message: 'What is your user name?',
-        name: 'username',
-      },
-    {
-      type: 'input',
-      message: 'What is your user name?',
-      name: 'username',
-    },
-    {
-        type: 'input',
-        message: 'What is your user name?',
-        name: 'username',
-      },
-    {
-      type: 'input',
-      message: 'What is your user name?',
-      name: 'username',
-    },
-    {
-        type: 'input',
-        message: 'What is your user name?',
-        name: 'username',
-      },
-      
-  ])
-  .then((response) =>
-    response.confirm === response.password
-      ? console.log('Success!')
-      : console.log('You forgot your password already?!')
-  );
+
 // TODO: Create an array of questions for user input
-const questions = ['What is the Description?', 'What is in the Table of Contents?', 'What are the Installition instructions?', 'What is the usage of this application?', 'What is the License?', 'What is the Contributing information?', 'What is the Test information?', 'What are any questions?'];
+const questions = [inquirer
+    .prompt([
+      {
+        type: 'input',
+        message: 'What is the Description?',
+        name: 'description',
+      },
+      {
+          type: 'input',
+          message: 'What is in the Table of Contents?',
+          name: 'contents',
+        },
+      {
+        type: 'input',
+        message: 'What are the Installition instructions?',
+        name: 'installation',
+      },
+      {
+          type: 'input',
+          message: 'What is the usage of this application?',
+          name: 'usage',
+        },
+      {
+        type: 'input',
+        message: 'What is the License?',
+        name: 'license',
+      },
+      {
+          type: 'input',
+          message: 'What is the Contributing information?',
+          name: 'contribution',
+        },
+      {
+        type: 'input',
+        message: 'What is the Test information?',
+        name: 'test',
+      },
+      {
+          type: 'input',
+          message: 'What are any questions?',
+          name: 'questions',
+        },
+        
+    ])];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
