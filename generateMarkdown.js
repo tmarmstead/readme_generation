@@ -15,6 +15,8 @@ function renderLink(license) {
 // Create function using switch to properly render badges
 function licenseBadgeChoices(license) {
     switch(license) {
+        case 'MIT':
+        return 'MIT';
         case 'IPL':
         return 'IPL%201.0';
         case 'Apache 2.0':
@@ -72,8 +74,10 @@ function generateMarkdown(data) {
   ${data.usage}
   
   ## License: 
-  ${renderLicenseBadge(licenseBadgeChoices(data.license))} \n
-  ${renderLink(licenseLinkSwitch(data.license))} 
+  Click the link below for full licensing information: \n
+  ${renderLink(licenseLinkSwitch(data.license))} \n
+  ${renderLicenseBadge(licenseBadgeChoices(data.license))} 
+ 
   
   ## Contribution: 
   ${data.contribution}

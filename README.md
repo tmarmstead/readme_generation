@@ -1,6 +1,6 @@
 # a 
 
-  ![License](https://img.shields.io/badge/License-undefined-blue.svg)
+  ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
   ## Table of Contents: 
   - [Description](#Description)
@@ -21,15 +21,12 @@
   a
   
   ## License: 
-  ![License](https://img.shields.io/badge/License-undefined-blue.svg) 
+  Click the link below for full licensing information: 
 
   https://opensource.org/licenses/MIT 
 
+  ![License](https://img.shields.io/badge/License-MIT-blue.svg) 
  
-
-
-
-
   
   ## Contribution: 
   a
