@@ -10,19 +10,9 @@ function renderLink(license) {
     return `https://opensource.org/licenses/${license}`
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-// function renderNoLicense() {
-//     if(`${license}` = 'None') {
-//         console.log('we selected no license', `${license}`);
-//     }
-//   }
-   
-
-
 // TODO: Create a function to generate markdown for README
 
-// switch 
+// Create function using switch to properly render badges
 function licenseBadgeChoices(license) {
     switch(license) {
         case 'IPL':
@@ -34,6 +24,7 @@ function licenseBadgeChoices(license) {
     }
 }
 
+// Create function using switch to properly render license links
 function licenseLinkSwitch(license){
     switch(license) {
         case 'MIT':
@@ -48,12 +39,14 @@ function licenseLinkSwitch(license){
         return '';
     }
 }
-    
+
+// Create function to generate link to github 
 function generateGitHubLink(github) {
     return `https://github.com/${github}`
 }
 
 
+// TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
     console.log('formatted license: ', renderLink(licenseLinkSwitch(data.license)))
   return `# ${data.title} 
@@ -81,12 +74,6 @@ function generateMarkdown(data) {
   ## License: 
   ${renderLicenseBadge(licenseBadgeChoices(data.license))} \n
   ${renderLink(licenseLinkSwitch(data.license))} 
-
- 
-
-
-
-
   
   ## Contribution: 
   ${data.contribution}
