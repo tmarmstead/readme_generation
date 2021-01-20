@@ -1,21 +1,22 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./generateMarkdown');
+const path = require('path');
 
 
 // TODO: Create an array of questions for user input
-const questions = [inquirer
-    .prompt([
+const questions = [
+    {
+        type: 'input',
+        message: 'What is the Title?',
+        name: 'title',
+      },
       {
         type: 'input',
         message: 'What is the Description?',
         name: 'description',
       },
-      {
-          type: 'input',
-          message: 'What is in the Table of Contents?',
-          name: 'contents',
-        },
       {
         type: 'input',
         message: 'What are the Installition instructions?',
@@ -27,9 +28,20 @@ const questions = [inquirer
           name: 'usage',
         },
       {
-        type: 'input',
-        message: 'What is the License?',
+        type: 'list',
+        message: 'Select a license:',
         name: 'license',
+        choices: ['MIT', 'IPL', 'Apache 2.0', 'BSD 3', 'None']
+      },
+      {
+        type: 'input',
+        message: 'What is your github username?',
+        name: 'github',
+      },
+      {
+        type: 'input',
+        message: 'What is your email?',
+        name: 'email',
       },
       {
           type: 'input',
@@ -41,25 +53,26 @@ const questions = [inquirer
         message: 'What is the Test information?',
         name: 'test',
       },
-      {
-          type: 'input',
-          message: 'What are any questions?',
-          name: 'questions',
-        },
         
-    ])];
+    ]
+
+
+    
+    
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile('README.md', process.argv[2], (err) =>
-  err ? console.error(err) : console.log('Success!')
-);
+    fs.writeFileSync(path.join(__dirname, fileName), data);
 }
 
 // TODO: Create a function to initialize app
 function init() {
-    writeToFile();
+    inquirer.prompt(questions)
+    .then((data) => {
+    writeToFile('README.md', generateMarkdown(data)); 
+    });
 }
 
 // Function call to initialize app
+
 init();
