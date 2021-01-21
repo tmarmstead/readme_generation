@@ -1,6 +1,6 @@
-# a 
+# RM Generate 
 
-  ![License](https://img.shields.io/badge/License-MIT-blue.svg)
+  ![License](https://img.shields.io/badge/License-IPL%201.0-blue.svg)
 
   ## Table of Contents: 
   - [Description](#Description)
@@ -12,32 +12,31 @@
   - [Questions](#Questions)
   
   ## Description: 
-  a
-  <iframe src="https://drive.google.com/file/d/1sJoT0UGmrjEHfbZsP_2IP399j7JA8BG0/preview" width="640" height="480"></iframe>
-  
+  about
+ 
   ## Installation: 
-  a
+  install
   
   ## Usage: 
-  a
+  how to use
   
   ## License: 
   Click the link below for full licensing information: 
 
-  https://opensource.org/licenses/MIT 
+  https://opensource.org/licenses/IPL-1.0 
 
-  ![License](https://img.shields.io/badge/License-MIT-blue.svg) 
+  ![License](https://img.shields.io/badge/License-IPL%201.0-blue.svg) 
  
   
   ## Contribution: 
-  a
+  please do so
   
   ## Test: 
-  a
+  testing 1 2 3 
   
   ## Questions: 
   If you have any questions you can reach me with the below contact information: 
 
-  https://github.com/a 
+  https://github.com/tmarmstead 
 
-  a
+  tina.armstead@gmail.com
