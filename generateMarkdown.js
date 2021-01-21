@@ -57,6 +57,7 @@ function generateMarkdown(data) {
 
   ## Table of Contents: 
   - [Description](#Description)
+  - [Demo](#Demo)
   - [Installation](#Installation)
   - [Usage](#Usage)
   - [License](#License)
@@ -67,6 +68,9 @@ function generateMarkdown(data) {
   ## Description: 
   ${data.description}
  
+  ## Demo:
+  ![Untitled_ Jan 21, 2021 12_00 PM](https://user-images.githubusercontent.com/71151032/105384636-78a7d900-5be0-11eb-8962-17ba723098cd.gif)
+
   ## Installation: 
   ${data.installation}
   
