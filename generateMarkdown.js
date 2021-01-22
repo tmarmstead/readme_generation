@@ -71,6 +71,8 @@ function generateMarkdown(data) {
   ## Demo:
   ![Untitled_ Jan 21, 2021 12_00 PM](https://user-images.githubusercontent.com/71151032/105384636-78a7d900-5be0-11eb-8962-17ba723098cd.gif)
 
+  [Link to video walkthrough](https://drive.google.com/file/d/1xH-42FhAGogtRVaiMP0IeE_bHc9r7bKA/view)
+
   ## Installation: 
   ${data.installation}
   
